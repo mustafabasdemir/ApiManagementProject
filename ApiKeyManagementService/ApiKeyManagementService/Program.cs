@@ -1,4 +1,17 @@
+using ApiKeyManagementService.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+
+// vt baglantisi
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DatabaseConnection"))
+);
+
+
+
+
 
 // Add services to the container.
 
