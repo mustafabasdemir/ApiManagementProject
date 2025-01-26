@@ -1,4 +1,5 @@
 using ApiKeyManagementService.Data;
+using ApiKeyManagementService.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 
 
+builder.Services.AddScoped<OwnerService>();
 
 
 // Add services to the container.

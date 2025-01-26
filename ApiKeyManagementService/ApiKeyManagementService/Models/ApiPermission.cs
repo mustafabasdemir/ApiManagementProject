@@ -4,7 +4,6 @@
     {
         public int Id { get; set; }
         public int ApiKeyId { get; set; }
-        public ApiKey ApiKey { get; set; }
         public string Endpoint { get; set; } //dıs servisin gidecegi api
         public bool CanRead { get; set; }
         public bool CanWrite { get; set; }
