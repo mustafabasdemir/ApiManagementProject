@@ -1,4 +1,4 @@
-namespace ApiManagementService
+namespace ApiKeyManagementService
 {
     public class WeatherForecast
     {

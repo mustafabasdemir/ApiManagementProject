@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace ApiManagementService.Controllers
+namespace ApiKeyManagementService.Controllers
 {
     [ApiController]
     [Route("[controller]")]
