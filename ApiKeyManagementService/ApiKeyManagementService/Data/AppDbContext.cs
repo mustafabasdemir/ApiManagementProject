@@ -7,9 +7,13 @@ namespace ApiKeyManagementService.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<Owner> Owners { get; set; }
         public DbSet<ApiKey> ApiKeys { get; set; }
-        public DbSet<ApiPermission> ApiPermissions { get; set; }
-        public DbSet<ApiUsageLog> ApiUsageLogs { get; set; }
+        public DbSet<IpAllowList> IpAllowLists { get; set; }
+        public DbSet<IpBlockList> IpBlockLists { get; set; }
+        public DbSet<Permission> Permissions { get; set; }
+        public DbSet<RateLimit> RateLimits { get; set; }
+        public DbSet<RequestLog> RequestLogs { get; set; }
+        public DbSet<User> Users { get; set; }
+
     }
 }
